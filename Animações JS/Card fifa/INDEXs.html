@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="/styleSlide.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+  </head>
+
+  <body>
+    <!-- Swiper -->
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="card">
+                <span class="esq1"></span>
+                <span class="dir1"></span>
+                <span class="esq2"></span>
+                <span class="dir2"></span>
+                <div class="faceCima">
+                    <img class="brau" src="/braulio.png">
+                    <h2 class="over">99</h2>
+                    <p class="pos">GK</p>
+                    <img class="sel" src="/Bandeira.png">
+                    <img class="tim" src="/LogoSemfundo.png">
+                </div>
+                <div class="Hab">
+                    <h1>Juninho Pum</h1>
+                    <ul class="c1">
+                        <li><h3>DIV</h3><h4>99</h4></li>
+                        <li><h3>HAN</h3><h4>99</h4></li>
+                        <li><h3>KIC</h3><h4>99</h4></li>
+                    </ul>
+                    <ul class="c2">
+                        <li><h3>REF</h3><h4>99</h4></li>
+                        <li><h3>SPE</h3><h4>99</h4></li>
+                        <li><h3>POS</h3><h4>99</h4></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+    </div>
+    
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

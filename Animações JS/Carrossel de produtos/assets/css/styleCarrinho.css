@@ -1,0 +1,173 @@
+section::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3639ef;
+    clip-path: circle(65% at 100% -20%);
+  }
+  
+  section::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #7afa47;
+    clip-path: circle(65% at 10% 150%);
+  }
+
+  section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+section .carrinho {
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    max-width: 950px;
+    height: 1050px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    z-index: 10;
+    border-radius: 32px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+section .carrinho h1 {
+    font-size: 30px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+section .carrinho ion-icon {
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+section .carrinho .inputCarrinho {
+    display: flex;
+    width: 850px;
+    height: 200px;
+    border: 3px solid rgba(255, 255, 255, 0.788);
+    padding: 20px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+section .carrinho .inputCarrinho .cami1 {
+    position: relative;
+    top: 30px;
+    left: -150px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+section .carrinho .inputCarrinho .cami2 {
+    position: relative;
+    top: 20px;
+    left: -120px;
+    width: 180px;
+    height: 150px;
+    z-index: 2;
+}
+
+section .carrinho .inputCarrinho h3 {
+    color: rgba(255, 255, 255, 0.788);
+    position: relative;
+    z-index: 1;
+    top: -9.2px;
+    margin-left: 10px;
+}
+
+section .carrinho .inputCarrinho .chut1 {
+    position: relative;
+    top: 30px;
+    left: -145px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+section .carrinho .inputCarrinho .chut2 {
+    position: relative;
+    top: 30px;
+    left: -105px;
+    width: 130px;
+    height: 120px;
+    z-index: 2;
+}
+
+section .carrinho .inputCarrinho img:hover {
+    transform: scale(1.2);
+}
+
+section .carrinho .inputCarrinho ul {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+section .carrinho .inputCarrinho .inf1 {
+    position: relative;
+    top: 50px;
+    left: -100px;
+}
+
+section .carrinho .inputCarrinho .inf2 {
+    position: relative;
+    top: 50px;
+    left: -105px;
+}
+
+section .carrinho .inputCarrinho .inf3 {
+    position: relative;
+    top: 50px;
+    left: -14px;
+}
+
+section .carrinho .inputCarrinho .inf4 {
+    position: relative;
+    top: 50px;
+    left: -50px;
+}
+
+section .carrinho .inputCarrinho h2 {
+    color: rgba(255, 0, 0, 0.932);
+    position: relative;
+    top: 40px;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+section .carrinho .inputCarrinho .remove1 {
+    position: relative;
+    right: -50px;
+}
+
+section .carrinho .inputCarrinho .remove3 {
+    position: relative;
+    right: -155px;
+}
+
+section .carrinho .inputCarrinho .remove4 {
+    position: relative;
+    right: -95px;
+}

@@ -1,0 +1,188 @@
+section::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3639ef;
+    clip-path: circle(65% at 100% -20%);
+  }
+  
+  section::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #7afa47;
+    clip-path: circle(65% at 10% 150%);
+  }
+
+  section {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      transition: 0.5s;
+      overflow: hidden;
+  }
+
+  section .container {
+      display: flex;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+      position: relative;
+      margin-top: 120px;
+      width: 900px;
+      height: 550px;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(15px);
+      z-index: 10;
+      border-radius: 12px;
+      overflow: hidden;
+  }
+
+  section .container .user .Content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 40px;
+      transition: 0.5s;
+  }
+
+  section .container .user .Content .p1 {
+      position: relative;
+      font-size: 28px;
+      font-weight: 600;
+      top: -20px;
+      left: 0px;
+      color: rgb(255, 255, 255);
+  }
+
+  section .container .user .Content .p2 {
+    position: relative;
+    font-size: 28px;
+    font-weight: 600;
+    top: -20px;
+    left: -470px;
+    color: rgb(255, 255, 255);
+}
+
+section .container .MinhaConta .Content li {
+    position: relative;
+    width: 300px;
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+section .container .MinhaConta .Content li:nth-child(1) {
+    position: relative;
+    width: 400px;
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+section .container .MinhaConta .Content li p {
+    margin-right: 10px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.719);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+section .container .MeusPedidos .Content li {
+    position: relative;
+    left: -450px;
+    width: 760px;
+    height: 80px;
+    margin-right: 10px;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.918);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+section .container .MeusPedidos .Content li p {
+    margin-right: 30px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+section .container .MeusPedidos .Content li p:hover {
+    color: turquoise;
+}
+
+section .container .MinhaConta .Content .perfil  {
+    position: absolute;
+    color: white;
+    width: 200px;
+    height: 200px;
+    top: 90px;
+    right: -270px;
+}
+
+section .container .MinhaConta .Content .perfil img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+section .container .MeusPedidos .Content {
+    top: 100%;
+    transition: 0.5s;
+}
+
+section .container.active .MeusPedidos .Content {
+    top: 0;
+    
+}
+
+section .container .MinhaConta .Content {
+    top: 0;
+    transition: 0.5s;
+}
+
+section .container.active .MinhaConta .Content {
+    top: 100%;
+}
+
+section .container .title1 a, section .container .title2 a {
+    text-decoration: none;
+    color: white;
+}
+
+section .container .title1 {
+    z-index: 10;
+    position: relative;
+    border: 5px solid none;
+    margin-left: 10px;
+    padding: 20px;
+    background: #3639ef;
+    width: 160px;
+    height: 60px;
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px ;
+}
+
+section .container .title2 {
+    z-index: 10;
+    margin-top: 10px;
+    position: relative;
+    left: -304px;
+    padding: 20px;
+    background: #7afa47;
+    width: 160px;
+    height: 60px;
+    color: white;
+    border-radius: 20px ;
+}

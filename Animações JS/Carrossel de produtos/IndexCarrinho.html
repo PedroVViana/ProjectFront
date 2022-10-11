@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Client Testimonial Section</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/assets/css/styleCarrinho.css">
+    <link rel="stylesheet" href="/assets/css/styleMenu.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/Index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/IndexConta.html">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="title">Conta</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="list active">
+                    <b></b>
+                    <b></b>
+                    <a href="/IndexCarrinho.html">
+                        <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+                        <span class="title">Carrinho</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/IndexSobre.html">
+                        <span class="icon"><ion-icon name="business-outline"></ion-icon></span>
+                        <span class="title">Sobre</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/IndexLogin.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            <div class="toggle">
+            </div>
+
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script>
+
+                let menuToggle = document.querySelector('.toggle')
+                let navigation = document.querySelector('.navigation')
+                menuToggle.onclick = function(){
+                    menuToggle.classList.toggle('active')
+                    navigation.classList.toggle('active')
+                }
+
+
+                //add active class in selected list item
+                let list = document.querySelectorAll('.list')
+                for (let i=0; i<list.length; i++){
+                    list[i].onclick = function(){
+                        let j = 0
+                        while(j< list.length){
+                            list[j++].className = 'list'
+                        }
+                        list[i].className = 'list active'
+                    }
+                }
+        </script>
+    </header>
+    <section>
+        <div class="carrinho">
+            <h1><ion-icon name="cart-outline"></ion-icon>Carrinho:</h1>
+            <div class="inputCarrinho">
+                <input type="checkbox" name="Carrinho">
+                <h3>Mortal Kombat XL</h3>
+                <img class="cami1" src="/assets/photos/ps4/mortalKombat-removebg-preview.png">
+                <ul class="inf1">
+                    <li>R$ 500</li>
+                    <li>Pedidos: 2</li>
+                </ul>
+                <h2 class="remove1">Remover</h2>
+            </div>
+            <div class="inputCarrinho">
+                <input type="checkbox" name="Carrinho">
+                <h3>Cyberpunk 2077</h3>
+                <img class="chut1" src="/assets/photos/xbox/ciberpunk-removebg-preview.png">
+                <ul class="inf2">
+                    <li>R$ 250</li>
+                    <li>Pedidos: 1</li>
+                </ul>
+                <h2 class="remove2">Remover</h2>
+            </div>
+            <div class="inputCarrinho">
+                <input type="checkbox" name="Carrinho">
+                <h3>Spider Man</h3>
+                <img class="chut2" src="/assets/photos/ps4/spider-man-removebg-preview.png">
+                <ul class="inf3">
+                    <li>R$ 250</li>
+                    <li>Cor: Preto</li>
+                    <li>Pedidos: 1</li>
+                </ul>
+                <h2 class="remove3" >Remover</h2>
+            </div>
+            <div class="inputCarrinho">
+                <input type="checkbox" name="Carrinho">
+                <h3>Forza Horizon 5</h3>
+                <img class="cami2" src="/assets/photos/xbox/forza-removebg-preview.png">
+                <ul class="inf4">
+                    <li>R$ 500</li>
+                    <li>Pedidos: 2</li>
+                </ul>
+                <h2 class="remove4" >Remover</h2>
+            </div>
+        </div>
+    </section>
+    </body>
+    </html>

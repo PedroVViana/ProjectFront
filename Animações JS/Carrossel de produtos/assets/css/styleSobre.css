@@ -1,0 +1,131 @@
+section::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3639ef;
+    clip-path: circle(65% at 100% -20%);
+  }
+  
+  section::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #7afa47;
+    clip-path: circle(65% at 10% 150%);
+  }
+
+  section {
+    position: relative;
+    max-height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+section .BoxSobre {
+    position: relative;
+    margin-top: 160px;
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    z-index: 10;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+section .BoxSobre h1 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 70px;
+    top: 120px;
+    left: 20px;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.486);
+    z-index: 5;
+}
+
+section .BoxSobre p {
+    position: absolute;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+    top: 140px;
+    color: rgb(255, 255, 255);
+    z-index: 5;
+    opacity: 0;
+}
+
+section .BoxSobre ion-icon {
+    color: rgba(255, 255, 255, 0.404);
+    font-size: 400px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    opacity: 0;
+}
+
+section .BoxSobre:hover ion-icon, section .BoxSobre:hover p  {
+    opacity: 1;
+    transition: 2s
+}
+
+section .BoxSobre:hover h1 {
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-size: 28px;
+    top: 100px;
+    left: 39%;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    z-index: 5;
+    transition: 1s;
+}
+
+section .Contatos {
+    display: flex;
+    transition: 0.5s;
+}
+
+section .Contatos .logoCont {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    z-index: 10;
+    border-radius: 42px;
+    top: 100px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+section .Contatos .logoCont:hover {
+    transform: translateY(-80px);
+    transition: 1s;
+}
+
+section .Contatos .logoCont ion-icon {
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 150px;
+    margin: 10px 10px 15px 15px;
+}

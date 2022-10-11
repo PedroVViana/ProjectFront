@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Client Testimonial Section</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/assets/css/styleCarrossel.css">
+    <link rel="stylesheet" href="/assets/css/styleMenu.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <b></b>
+                    <b></b>
+                    <a href="/Index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/IndexConta.html">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="title">Conta</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/IndexCarrinho.html">
+                        <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+                        <span class="title">Carrinho</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/IndexSobre.html">
+                        <span class="icon"><ion-icon name="business-outline"></ion-icon></span>
+                        <span class="title">Sobre</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/IndexLogin.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            <div class="toggle">
+            </div>
+
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script>
+
+                let menuToggle = document.querySelector('.toggle')
+                let navigation = document.querySelector('.navigation')
+                menuToggle.onclick = function(){
+                    menuToggle.classList.toggle('active')
+                    navigation.classList.toggle('active')
+                }
+
+
+                //add active class in selected list item
+                let list = document.querySelectorAll('.list')
+                for (let i=0; i<list.length; i++){
+                    list[i].onclick = function(){
+                        let j = 0
+                        while(j< list.length){
+                            list[j++].className = 'list'
+                        }
+                        list[i].className = 'list active'
+                    }
+                }
+        </script>
+
+
+
+
+        <div class="MenuPesquisa">
+            <form>
+                <input type="search" placeholder="Pesquisa..."><ion-icon name="search-outline"></ion-icon>
+            </form>
+        </div>
+
+    </header>
+
+    
+
+
+    <section>
+        <div class="swiper mySwiper">
+            <h1>Playstation 4:</h1>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="Chuteira" src="/assets/photos/ps4/cdz-removebg-preview.png">
+                        <h2>Cavaleiros do Zodiaco</h2>
+                    </div>
+                    <div class="content">
+                        <span>R$250</span>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="Chuteira" src="/assets/photos/ps4/mortalKombat-removebg-preview.png">
+                        <h2>Mortal Kombat XL</h2>
+                    </div>
+                    <div class="content">
+                        <span>R$250</span>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="Chuteira" src="/assets/photos/ps4/game-naruto-shippuden-removebg-preview.png">
+                        <h2>Naruto Storm 4</h2>
+                    </div>
+                    <div class="content">
+                        <span>R$250</span>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="Chuteira" src="/assets/photos/ps4/gamegodofwar-removebg-preview.png">
+                        <h2>God of war</h2>
+                    </div>
+                    <div class="content">
+                        <span>R$250</span>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="Chuteira" src="/assets/photos/ps4/spider-man-removebg-preview.png">
+                        <h2>Spider Man</h2>
+                    </div>
+                    <div class="content">
+                        <span>R$250</span>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+
+      
+              <div class="swiper mySwiper">
+                  <h1>Xbox:</h1>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="Camisa" src="/assets/photos/xbox/halo-removebg-preview.png">
+                        <h2>Halo war 2</h2>
+                    </div>
+                    <div class="content" class="Camisa">
+                        <span>R$250</span>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="Camisa" src="/assets/photos/xbox/war-4-3-removebg-preview.png">
+                        <h2>Gears of War 5</h2>
+                    </div>
+                    <div class="content">
+                        <span>R$250</span>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="Camisa" id="PSG" src="/assets/photos/xbox/forza-removebg-preview.png">
+                        <h2>Forza Horizon 5</h2>
+                    </div>
+                    <div class="content">
+                        <span>R$250</span>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="Camisa" src="/assets/photos/xbox/ciberpunk-removebg-preview.png">
+                        <h2>Cyberpunk 2077</h2>
+                    </div>
+                    <div class="content">
+                        <span>R$250</span>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                    <div class="imgBx">
+                        <img class="Camisa" src="/assets/photos/xbox/red-removebg-preview.png">
+                        <h2>Red dead redemption 2</h2>
+                    </div>
+                    <div class="content">
+                        <span>R$250</span>
+                        <a href="#">Comprar</a>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+</body>
+</html>

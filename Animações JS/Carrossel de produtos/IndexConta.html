@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minha Conta</title>
+        <link rel="stylesheet" href="/assets/css/styleConta.css">
+        <link rel="stylesheet" href="/assets/css/styleMenu.css">
+    </head>
+    <body>
+        <header>
+            <div class="navigation">
+                <ul>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="/Index.html">
+                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                            <span class="title">Home</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list active">
+                        <b></b>
+                        <b></b>
+                        <a href="/IndexConta.html">
+                            <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                            <span class="title">Conta</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="/IndexCarrinho.html">
+                            <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+                            <span class="title">Carrinho</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="/IndexSobre.html">
+                            <span class="icon"><ion-icon name="business-outline"></ion-icon></span>
+                            <span class="title">Sobre</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list">
+                        <b></b>
+                        <b></b>
+                        <a href="/IndexLogin.html">
+                            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                            <span class="title">Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                <div class="toggle">
+                </div>
+    
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+            <script>
+    
+                    let menuToggle = document.querySelector('.toggle')
+                    let navigation = document.querySelector('.navigation')
+                    menuToggle.onclick = function(){
+                        menuToggle.classList.toggle('active')
+                        navigation.classList.toggle('active')
+                    }
+    
+    
+                    //add active class in selected list item
+                    let list = document.querySelectorAll('.list')
+                    for (let i=0; i<list.length; i++){
+                        list[i].onclick = function(){
+                            let j = 0
+                            while(j< list.length){
+                                list[j++].className = 'list'
+                            }
+                            list[i].className = 'list active'
+                        }
+                    }
+            </script>
+    
+        </header>
+        <section>
+            <div class="container">
+                <div class="user MinhaConta">
+                    <p class="title1"><a href="#" onclick="toggleForm();">Minha Conta</a></p>
+                    <div class="Content">
+                        <h2 class="p1">Conta</h2>
+                        <ul>
+                            <li>
+                                <p>Nome</p>
+                                <p>Pedro Henrique Van Lume Viana</p>
+                            </li>
+                            <li>
+                                <p>Email</p>
+                                <p>pedro.vviana@hotmail.com</p>
+                            </li>
+                            <li>
+                                <p>Password</p>
+                                <p>************</p>
+                            </li>
+                            <li>
+                                <p>Telefone</p>
+                                <p>(81)9 87221825</p>
+                            </li>
+                            <li>
+                                <p>CEP</p>
+                                <P>33944232</P>
+                            </li>
+                            <li>
+                                <p>CPF</p>
+                                <p>389281939-02</p>
+                            </li>
+                            <div class="perfil">
+                                <p>Foto de Perfil</p>
+                                <img src="/assets/photos/Perfil.jpeg">
+                            </div>
+                            
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="user MeusPedidos">
+                    <p class="title2"><a href="#" onclick="toggleForm();">Meus Pedidos</a></p>
+                    <div class="Content">
+                        <h2 class="p2">Pedidos</h2>
+                        <ul>
+                            <li>
+                                <p>Mortal Kombat XL</p>
+                                <p>R$ 500</p>
+                                <p>Pedidos: 2</p>
+                            </li>
+                            <li>
+                                <p>Cyberpunk 2077</p>
+                                <p>R$ 250</p>
+                                <p>Pedidos: 1</p>
+                            </li>
+                            <li>
+                                <p>Spider Man</p>
+                                <p>R$ 250</p>
+                                <p>Pedidos: 1</p>
+                            </li>
+                            <li>
+                                <p>Forza Horizon 5</p>
+                                <p>R$ 500</p>
+                                <p>Pedidos: 2</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            function toggleForm(){
+                container = document.querySelector('.container');
+                container.classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>

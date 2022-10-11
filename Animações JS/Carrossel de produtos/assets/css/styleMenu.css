@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #2a2a2b;
+}
+
+.navigation {
+    display: flex;
+    z-index: 20;
+    position: fixed;
+    top: 10px;
+    left: 80px;
+    bottom: 20px;
+    width: 1200px;
+    height: 80px;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 5px solid hsl(234, 60%, 30%); 
+    background: #1f287c;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation.active {
+    height: 80px;
+}
+
+.navigation ul {
+    position: relative;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+
+.navigation ul li.active {
+    background: #2a2a2b;
+    border-radius: 20px;
+    width: 170px;
+    height: 10px;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li.active a {
+    color: #fff;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    left: 35px;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navigation ul li a .icon ion-icon {
+    font-size: 1.5em;
+}
+
+.navigation ul li a .title {
+    position: absolute;
+    left: 65px;
+    display: block;
+    padding-left: 20px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+
+.MenuPesquisa {
+    z-index: 9;
+    width: 600px;
+    height: 60px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    left: 29%;
+    top: 120px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1f287c;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+.MenuPesquisa input {
+    position: relative;
+    padding: 7px 120px;
+    background: none;
+    border: none;
+    color: #fff;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.MenuPesquisa input::placeholder {
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+}
+
+.MenuPesquisa ion-icon{
+    color: #fff;
+    font-size: 35px;
+    position: relative;
+    top: 12px;
+    margin-left: 65px;
+}
